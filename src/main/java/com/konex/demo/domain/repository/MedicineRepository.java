@@ -8,7 +8,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@NoRepositoryBean
 public interface MedicineRepository extends CrudRepository<MedicineEntity, Long> {
 
 }

@@ -17,9 +17,6 @@ import org.springframework.stereotype.Service;
 public class GetAllMedicinesUseCase implements GetAllMedicines {
 
 
-  @Autowired
-  private MedicineRepository medicineRepository;
-
   @Override
   public List<MedicineResponse> execute() {
 
