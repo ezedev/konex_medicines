@@ -2,12 +2,13 @@ package com.konex.demo.application.response;
 
 import java.math.BigDecimal;
 
-import javax.persistence.Column;
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 
 @Data
 @Getter
+@Builder
 public class MedicineResponse {
 
   private Long id;

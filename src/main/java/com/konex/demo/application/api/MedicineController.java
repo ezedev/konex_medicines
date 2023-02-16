@@ -85,11 +85,4 @@ public class MedicineController {
     responseMessage.put("alumno", responseObject);
     return new ResponseEntity<Map<String, Object>>(responseMessage, HttpStatus.CREATED);
   }
-
-  @GetMapping("/hola")
-  public ResponseEntity<String> hola() {
-
-    return new ResponseEntity<>("hola", HttpStatus.OK);
-
-  }
 }

@@ -18,24 +18,26 @@ public class MedicineMapper {
   }
 
   public static MedicineResponse toResponse(MedicineEntity target) {
-    var response = new MedicineResponse();
-    response.setDueDate(target.getDueDate());
-    response.setId(target.getId());
-    response.setUnitValue(target.getUnitValue());
-    response.setFactoryLaboratory(target.getFactoryLaboratory());
-    response.setStock(target.getStock());
-    response.setCreationDate(target.getCreationDate());
+    var response = MedicineResponse.builder()
+        .stock(target.getStock())
+        .id(target.getId())
+        .name(target.getName())
+        .factoryLaboratory(target.getFactoryLaboratory())
+        .creationDate(target.getCreationDate())
+        .UnitValue(target.getUnitValue())
+        .build();
     return response;
   }
 
   public static MedicineResponse toResponse(MedicineRequest target) {
-    var response = new MedicineResponse();
-    response.setDueDate(target.getDueDate());
-    response.setId(target.getId());
-    response.setUnitValue(target.getUnitValue());
-    response.setFactoryLaboratory(target.getFactoryLaboratory());
-    response.setStock(target.getStock());
-    response.setCreationDate(target.getCreationDate());
+    var response = MedicineResponse.builder()
+        .stock(target.getStock())
+        .id(target.getId())
+        .name(target.getName())
+        .factoryLaboratory(target.getFactoryLaboratory())
+        .creationDate(target.getCreationDate())
+        .UnitValue(target.getUnitValue())
+        .build();
     return response;
   }
 
