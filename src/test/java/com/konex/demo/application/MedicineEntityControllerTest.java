@@ -26,7 +26,7 @@ public class MedicineEntityControllerTest {
   private MedicineController medicineController;
 
   @Mock
-  GetAllMedicines getAllMedicinesUseCase;
+  private GetAllMedicines getAllMedicinesUseCase;
 
   @Mock
   private GetMedicineById getMedicineByIdUseCase;
